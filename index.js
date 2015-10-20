@@ -50,7 +50,7 @@ module.exports = (options) => {
       return (value !== null && typeof value === 'object' && value.severity === 'ERROR');
     },
 
-    handle (value) => {
+    handle: (value) => {
       if (value.hasOwnProperty('code') && condition.hasOwnProperty(value.code)) {
           throw condition[value.code](value);
       } else if (value.hasOwnProperty('code') && typeof value.code === 'string' && category.hasOwnProperty(value.code.substr(0, 2))) {
