@@ -52,11 +52,11 @@ module.exports = (options) => {
 
     handle: (value) => {
       if (value.hasOwnProperty('code') && condition.hasOwnProperty(value.code)) {
-          throw condition[value.code](value);
+          return condition[value.code](value);
       } else if (value.hasOwnProperty('code') && typeof value.code === 'string' && category.hasOwnProperty(value.code.substr(0, 2))) {
-          throw category[value.code.substr(0, 2)](value);
+          return category[value.code.substr(0, 2)](value);
       } else {
-          throw Boom.badImplementation(value.toString());
+          return Boom.badImplementation(value.toString());
       }
     }
   };
