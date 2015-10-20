@@ -1,0 +1,27 @@
+{
+  "name": "drboom-pg",
+  "version": "0.0.1",
+  "description": "drboom plugin for postgres",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fritzy/drboom-pg.git"
+  },
+  "keywords": [
+    "drboom",
+    "boom",
+    "hapi",
+    "http",
+    "postgres",
+    "error"
+  ],
+  "author": "Nathan Fritz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fritzy/drboom-pg/issues"
+  },
+  "homepage": "https://github.com/fritzy/drboom-pg#readme"
+}
