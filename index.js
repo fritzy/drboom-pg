@@ -38,7 +38,7 @@ module.exports = (options) => {
   if (typeof options !== 'undefined') {
     let regErr = internal.validate(options);
     if (regErr.error) {
-      throw regError;
+      throw regErr.error;
     }
     condition = lodash.assign(condition, options.extendConditions);
     category = lodash.assign(category, options.extendCategories);
